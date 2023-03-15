@@ -1,0 +1,10 @@
+:root {
+    --font: 'Roboto', sans-serif;
+
+    --btn-clr: #3CCC87;
+    --light-clr: #fff;
+    --dark-clr: #000;
+    --invalid-input-clr: #F52E2E;
+    --valid-input-clr: #00C22B;
+}
+

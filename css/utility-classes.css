@@ -1,17 +1,41 @@
 .container {
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 .flex {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .flex {
+    flex-direction: row;
+  }
+
+  .flex-basis {
+    flex-basis: 50%;
+  }
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .appear {
-    display: initial;
+  display: initial;
+}
+
+.invalid-input {
+    border-color: var(--invalid-input-clr);
+}
+
+.valid-input {
+    border-color: var(--valid-input-clr);
 }

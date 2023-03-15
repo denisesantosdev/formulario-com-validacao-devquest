@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    background-image: url(../img/bg-repeat.jpg);
+    background-size: contain;
+    font-family: var(--font);
+}
+
+main {
+    padding: 1rem;
+}
+
+label {
+    display: none;
+}
+
+.text-container {
+    color: var(--light-clr);
+}
+
+.text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6875rem;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+}
+
+form {
+    background-color: var(--light-clr);
+    padding: 1.25rem;
+    font-size: 1.5rem;
+}
+
+.field-container {
+    margin-bottom: 1rem;
+}
+
+input,
+textarea {
+    padding: 1rem;
+    border-radius: 0.3125rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.invalid-input-message {
+    color: red;
+}
+
+.submit-btn {
+    background-color: var(--btn-clr);
+    color: var(--light-clr);
+    margin-top: 1.5rem;
+    border: none;
+}

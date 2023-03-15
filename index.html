@@ -32,57 +32,68 @@
       rel="stylesheet"
       href="./css/main.css" />
   </head>
-  <body>
-    <main class="container">
-      <section class="text-container">
+  <body class="grid">
+    <main class="container flex">
+      <section class="text-container flex-basis">
         <h1>FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
         <p>
           Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
           entraremos em contato em menos de 24h.
         </p>
       </section>
-      <form action="">
-        <div class="field">
+      <form
+        action=""
+        class="flex-basis">
+        <div class="field-container">
           <label for="nome-completo">Nome completo</label>
           <input
             type="text"
             placeholder="Nome completo*"
             name="nome-completo"
-            id="nome-completo" />
+            id="nome-completo"
+            class="field" />
+          <p class="invalid-input-message hidden">campo obrigatório</p>
         </div>
 
-        <div class="field">
+        <div class="field-container">
           <label for="email">Email</label>
           <input
             type="email"
             placeholder="Email*"
             name="email"
-            id="email" />
+            id="email"
+            class="field" />
+          <p class="invalid-input-message hidden">campo obrigatório</p>
         </div>
 
-        <div class="field">
+        <div class="field-container">
           <label for="telefone">Telefone</label>
           <input
             type="number"
             placeholder="Telefone*"
             name="telefone"
-            id="telefone" />
+            id="telefone"
+            class="field" />
+          <p class="invalid-input-message hidden">campo obrigatório</p>
         </div>
 
-        <div class="field">
+        <div class="field-container">
           <label for="mensagem">Mensagem</label>
           <textarea
             name="mensagem"
             id="mensagem"
             cols="30"
             rows="10"
-            placeholder="Mensagem*"></textarea>
+            placeholder="Mensagem*"
+            class="field"></textarea>
+          <p class="invalid-input-message hidden">campo obrigatório</p>
         </div>
 
         <p>*campos obrigatorios</p>
         <input
           type="button"
-          value="Enviar" />
+          value="Enviar"
+          class="submit-btn" />
       </form>
     </main>
   </body>

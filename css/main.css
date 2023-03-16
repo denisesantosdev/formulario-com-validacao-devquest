@@ -47,6 +47,7 @@ textarea {
 }
 
 .invalid-input-message {
+    font-size: 1rem;
     color: red;
 }
 
